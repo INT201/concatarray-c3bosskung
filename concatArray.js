@@ -12,14 +12,7 @@ function concatArray(array1, array2) {
     } else if (array1.length === 0 && array2.length === 0) {
       return [];
     } else {
-        for (let i = 0; i < array1.length; i++) {
-          resultArr[i] = array1[i]
-          checkL++;
-        }
-        for (let i = 0; i < array2.length; i++) {
-          resultArr[i+checkL] = array2[i]
-        }
-        return resultArr
+        return array1.concat(array2);
     }
 }
 
